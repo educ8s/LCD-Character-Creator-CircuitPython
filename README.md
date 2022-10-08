@@ -1,4 +1,2 @@
 # LCD-Character-Creator
-Liquid Crystal Display Custom Character Creator for MCU
-
-www.ioxhop.com
+Liquid Crystal Display Custom Character Creator for CircuitPython & MicroPython
