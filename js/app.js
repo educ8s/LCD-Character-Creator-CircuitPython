@@ -1,26 +1,20 @@
-var ArduinoTemplate = "";
-ArduinoTemplate += "custom_char = bytearray((\n";
-ArduinoTemplate += "  {DataX0},\n";
-ArduinoTemplate += "  {DataX1},\n";
-ArduinoTemplate += "  {DataX2},\n";
-ArduinoTemplate += "  {DataX3},\n";
-ArduinoTemplate += "  {DataX4},\n";
-ArduinoTemplate += "  {DataX5},\n";
-ArduinoTemplate += "  {DataX6},\n";
-ArduinoTemplate += "  {DataX7}\n";
-ArduinoTemplate += "))\n";
-
 var ArduinoI2CTemplate = "";
-ArduinoI2CTemplate += "custom_char = bytearray((\n";
-ArduinoI2CTemplate += "    {DataX0},\n";
-ArduinoI2CTemplate += "    {DataX1},\n";
-ArduinoI2CTemplate += "    {DataX2},\n";
-ArduinoI2CTemplate += "    {DataX3},\n";
-ArduinoI2CTemplate += "    {DataX4},\n";
-ArduinoI2CTemplate += "    {DataX5},\n";
-ArduinoI2CTemplate += "    {DataX6},\n";
-ArduinoI2CTemplate += "    {DataX7}\n";
-ArduinoI2CTemplate += "))\n";
+ArduinoI2CTemplate += "custom_char = (";
+ArduinoI2CTemplate += "{DataX0},";
+ArduinoI2CTemplate += "{DataX1},";
+ArduinoI2CTemplate += "{DataX2},";
+ArduinoI2CTemplate += "{DataX3},";
+ArduinoI2CTemplate += "{DataX4},";
+ArduinoI2CTemplate += "{DataX5},";
+ArduinoI2CTemplate += "{DataX6},";
+ArduinoI2CTemplate += "{DataX7}";
+ArduinoI2CTemplate += ")\n";
+
+function copyCode() {
+  code = $("#code-box").text();
+  navigator.clipboard.writeText(code);
+  alert("Code copied to clipboard!");
+}
 
 function binaryToHex(s) {
   var i,
